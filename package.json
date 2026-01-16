@@ -1,0 +1,23 @@
+{
+  "name": "middleware",
+  "version": "1.0.0",
+  "description": "Middleware para Consumo de Apis de SDP",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luisitopa681/middleware.git"
+  },
+  "author": "José Pacheco",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luisitopa681/middleware/issues"
+  },
+  "homepage": "https://github.com/luisitopa681/middleware#readme",
+  "dependencies": {
+    "axios": "^1.13.2",
+    "validator": "^13.12.0"
+  }
+}
