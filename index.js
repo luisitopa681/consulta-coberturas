@@ -74,10 +74,12 @@ function groupCoberturasByProducto(data) {
       map.set(key, {
         Producto: key,
         Descripcion: raw,
-        Agencia: r && r.Agencia,
+        Agencia: r && r.Agencia,//** */
         Cotizacion: r && r.Cotizacion,
-        Poliza: r && r.Poliza,
-        Certificado_Individual: r && r.Certificado_Individual,
+        Nro_doc: r && r.nro_documento,//** */
+        Ramo: r && r.Ramo,//** */
+        Poliza: r && r.Poliza,//** */
+        Certificado_Individual: r && r.Certificado_Individual,//** */
         FechaInicioVigencia: r && r.FechaInicioVigencia,
         Coberturas: [cobertura],
       });

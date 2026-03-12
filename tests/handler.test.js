@@ -33,12 +33,12 @@ async function run(name, fn) {
     process.exitCode = 1;
   }
 }
-/*
+
 if (process.env.RUN_INTEGRATION === "1") {
   run("rest POST body string (Genesys)", async () => {
     const baseUrl =
       "https://busservicioscert.segurosdelpichincha.com:5370";
-  const baseUrl2 =
+    const baseUrl2 =
       "https://busservicioscert.segurosdelpichincha.com:5370/rest/jwt/switchtrans";
     const event = makeEvent({
       method: "POST",
@@ -58,8 +58,8 @@ if (process.env.RUN_INTEGRATION === "1") {
     const res = await handler(event, {});
     console.log("Genesys POST status:", res.statusCode);
     console.log("Genesys POST body:", res.body);
-  });*/
-
+  });
+}
 if (process.env.RUN_INTEGRATION === "1") {
   run("rest POST body string (Genesys)", async () => {
     const baseUrl = "https://busservicioscert.segurosdelpichincha.com:5370";
@@ -87,3 +87,4 @@ if (process.env.RUN_INTEGRATION === "1") {
     console.log("Genesys POST body:", res.body);
   });
 }
+
